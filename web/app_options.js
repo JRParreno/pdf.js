@@ -214,8 +214,8 @@ const defaultOptions = {
       typeof PDFJSDev === "undefined"
         ? "../external/bcmaps/"
         : PDFJSDev.test("MOZCENTRAL")
-        ? "resource://pdf.js/web/cmaps/"
-        : "../web/cmaps/",
+          ? "resource://pdf.js/web/cmaps/"
+          : "../web/cmaps/",
     kind: OptionKind.API,
   },
   disableAutoFetch: {
@@ -280,8 +280,8 @@ const defaultOptions = {
       typeof PDFJSDev === "undefined"
         ? "../external/standard_fonts/"
         : PDFJSDev.test("MOZCENTRAL")
-        ? "resource://pdf.js/web/standard_fonts/"
-        : "../web/standard_fonts/",
+          ? "resource://pdf.js/web/standard_fonts/"
+          : "../web/standard_fonts/",
     kind: OptionKind.API,
   },
   verbosity: {
@@ -302,15 +302,15 @@ const defaultOptions = {
       typeof PDFJSDev === "undefined"
         ? "../src/pdf.worker.js"
         : PDFJSDev.test("MOZCENTRAL")
-        ? "resource://pdf.js/build/pdf.worker.js"
-        : "../build/pdf.worker.js",
+          ? "resource://pdf.js/build/pdf.worker.js"
+          : "../build/pdf.worker.js",
     kind: OptionKind.WORKER,
   },
 };
 if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
   defaultOptions.defaultUrl = {
     /** @type {string} */
-    value: "compressed.tracemonkey-pldi-09.pdf",
+    value: "JHON-RHAY-PARRENO-CV.pdf",
     kind: OptionKind.VIEWER,
   };
   defaultOptions.disablePreferences = {

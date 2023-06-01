@@ -17,7 +17,7 @@ const Canvas = require("canvas");
 const assert = require("assert").strict;
 const fs = require("fs");
 
-function NodeCanvasFactory() {}
+function NodeCanvasFactory() { }
 NodeCanvasFactory.prototype = {
   create: function NodeCanvasFactory_create(width, height) {
     assert(width > 0 && height > 0, "Invalid canvas size");
@@ -62,7 +62,7 @@ const canvasFactory = new NodeCanvasFactory();
 
 // Loading file from file system into typed array.
 const pdfPath =
-  process.argv[2] || "../../../web/compressed.tracemonkey-pldi-09.pdf";
+  process.argv[2] || "../../../web/JHON-RHAY-PARRENO-CV.pdf";
 const data = new Uint8Array(fs.readFileSync(pdfPath));
 
 // Load the PDF file.

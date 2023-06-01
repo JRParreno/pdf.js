@@ -134,11 +134,11 @@ function safeSpawnSync(command, parameters, options) {
   if (result.status !== 0) {
     console.log(
       'Error: command "' +
-        command +
-        '" with parameters "' +
-        parameters +
-        '" exited with code ' +
-        result.status
+      command +
+      '" with parameters "' +
+      parameters +
+      '" exited with code ' +
+      result.status
     );
     process.exit(result.status);
   }
@@ -352,7 +352,7 @@ function checkChromePreferencesFile(chromePrefsPath, webPrefs) {
       ret = false;
       console.log(
         `Warning: not the same values (for "${value}"): ` +
-          `${chromePrefs.properties[value].default} !== ${webPrefs[value]}`
+        `${chromePrefs.properties[value].default} !== ${webPrefs[value]}`
       );
     }
   }
@@ -928,7 +928,7 @@ function buildGeneric(defines, dir) {
       .pipe(gulp.dest(dir + "web")),
 
     gulp
-      .src("web/compressed.tracemonkey-pldi-09.pdf")
+      .src("web/JHON-RHAY-PARRENO-CV.pdf")
       .pipe(gulp.dest(dir + "web")),
   ]);
 }
@@ -1097,7 +1097,7 @@ function buildMinified(defines, dir) {
       .pipe(gulp.dest(dir + "web")),
 
     gulp
-      .src("web/compressed.tracemonkey-pldi-09.pdf")
+      .src("web/JHON-RHAY-PARRENO-CV.pdf")
       .pipe(gulp.dest(dir + "web")),
   ]);
 }
@@ -2344,8 +2344,8 @@ gulp.task(
             .on("end", function () {
               console.log(
                 "Result diff can be found at " +
-                  BUILD_DIR +
-                  MOZCENTRAL_DIFF_FILE
+                BUILD_DIR +
+                MOZCENTRAL_DIFF_FILE
               );
               done();
             });
